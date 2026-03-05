@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dermatouch - Strategic Proposal</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'derma': {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            200: '#99f6e4',
+                            300: '#5eead4',
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                        },
+                        'slate': {
+                            850: '#1e293b',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 20px 40px -15px rgba(0, 0, 0, 0.05)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Utilities */
+        .glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        
+        /* Print Specific Styles */
+        @media print {
+            @page {
+                margin: 0.5cm;
+                size: A4;
+            }
+            body {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            .print\:hidden {
+                display: none !important;
+            }
+            .print\:break-inside-avoid {
+                break-inside: avoid;
+            }
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #0f766e 0%, #2dd4bf 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans text-slate-900 antialiased selection:bg-derma-200 selection:text-derma-900">
+    
+    <main>
+      <!-- Header -->
+      <header class="glass sticky top-0 z-50 border-b border-slate-200 transition-all duration-300 print:hidden">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+          <div class="flex items-center gap-6">
+            <!-- Dermatouch Placeholder Logo -->
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-slate-900 rounded-full flex items-center justify-center text-white font-serif font-bold">D</div>
+                <span class="font-serif font-bold text-xl text-slate-900">Dermatouch</span>
+            </div>
+
+            <span class="text-slate-300 font-light text-2xl">×</span>
+
+            <!-- ThinkOwl Logo -->
+            <div class="flex items-center gap-2">
+                <i data-lucide="brain-circuit" class="w-6 h-6 text-derma-600"></i>
+                <span class="font-sans font-bold text-xl text-slate-800">ThinkOwl</span>
+            </div>
+          </div>
+          <div class="hidden md:block text-xs font-bold text-derma-700 uppercase tracking-widest bg-derma-50 px-3 py-1 rounded-full border border-derma-100">
+            Strategic Proposal
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="relative pt-24 pb-20 overflow-hidden bg-white">
+        <!-- Background Elements -->
+        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-b from-derma-50 to-transparent rounded-full blur-[100px] opacity-60 -z-10 translate-x-1/3 -translate-y-1/4"></div>
+        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-t from-blue-50 to-transparent rounded-full blur-[80px] opacity-40 -z-10 -translate-x-1/4 translate-y-1/4"></div>
+
+        <div class="container mx-auto px-6 relative z-10 text-center">
+
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200 mb-8">
+            <span class="w-2 h-2 rounded-full bg-derma-500 animate-pulse"></span>
+            <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">AI-Native Service Desk</span>
+          </div>
+
+          <h1 class="text-5xl md:text-7xl font-serif font-medium text-slate-900 mb-8 leading-[1.1]">
+            Transforming Customer Service <br />
+            <span class="italic text-slate-500">into a Profit Center</span>
+          </h1>
+
+          <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-16 font-light leading-relaxed">
+            A unified, AI-native solution to automate routine queries, empower agents with real-time intelligence, and deliver seamless omnichannel experiences for <span class="font-semibold text-derma-700">Dermatouch</span>.
+          </p>
+
+          <!-- Strategic Ecosystem Map -->
+          <div class="relative py-12 mt-12 max-w-7xl mx-auto px-4">
+            <p class="text-[10px] font-extrabold text-slate-400 uppercase tracking-[0.3em] mb-16 relative z-10 italic">
+              Technical Integration Framework: Front-End Engagement to Back-End Fulfillment
+            </p>
+
+            <div class="relative flex flex-col lg:flex-row items-center justify-between gap-12">
+
+              <!-- Left Column: Unified Engagement Channels -->
+              <div class="flex flex-col gap-4 w-full lg:w-72 relative z-10 order-2 lg:order-1">
+                <div class="text-left mb-2 pl-2 border-l-2 border-derma-500 ml-1">
+                  <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Inbound Channels</span>
+                </div>
+
+                <!-- IVR & Voice -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-slate-100 flex items-center gap-3 transform hover:-translate-x-1 transition-transform">
+                  <div class="w-8 h-8 rounded-full bg-slate-800 text-white flex items-center justify-center shrink-0">
+                    <i data-lucide="phone" class="w-4 h-4"></i>
+                  </div>
+                  <div class="text-left leading-tight">
+                    <h5 class="font-bold text-xs text-slate-800 uppercase">Callerdesk / IVR</h5>
+                    <p class="text-[9px] text-slate-400">Telephony Integration</p>
+                  </div>
+                </div>
+
+                <!-- WhatsApp & Social Ads -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-slate-100 flex items-center gap-3 transform hover:-translate-x-1 transition-transform border-l-4 border-green-500">
+                  <div class="w-8 h-8 rounded-full bg-[#25D366] text-white flex items-center justify-center shrink-0">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  </div>
+                  <div class="text-left leading-tight">
+                    <h5 class="font-bold text-xs text-slate-800 uppercase">WhatsApp & Social</h5>
+                    <p class="text-[9px] text-slate-400">Meta Business API</p>
+                  </div>
+                </div>
+
+                <!-- Live Chat & Self Service -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-slate-100 flex items-center gap-3 transform hover:-translate-x-1 transition-transform">
+                  <div class="w-8 h-8 rounded-full bg-blue-500 text-white flex items-center justify-center shrink-0">
+                    <i data-lucide="layout" class="w-4 h-4"></i>
+                  </div>
+                  <div class="text-left leading-tight">
+                    <h5 class="font-bold text-xs text-slate-800 uppercase">Web Chat & Portal</h5>
+                    <p class="text-[9px] text-slate-400">Self-Service Widget</p>
+                  </div>
+                </div>
+
+                <!-- Email & Web -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-slate-100 flex items-center gap-3 transform hover:-translate-x-1 transition-transform">
+                  <div class="w-8 h-8 rounded-full bg-red-500 text-white flex items-center justify-center shrink-0">
+                    <i data-lucide="mail" class="w-4 h-4"></i>
+                  </div>
+                  <div class="text-left leading-tight">
+                    <h5 class="font-bold text-xs text-slate-800 uppercase">Unified Email</h5>
+                    <p class="text-[9px] text-slate-400">Automated Triage</p>
+                  </div>
+                </div>
+
+                <!-- Social Monitoring -->
+                <div class="bg-slate-50 p-3 rounded-xl shadow-sm border border-dashed border-slate-200 flex items-center gap-3 transform hover:-translate-x-1 transition-transform">
+                  <div class="flex -space-x-2">
+                    <div class="w-6 h-6 rounded-full bg-slate-900 border-2 border-white flex items-center justify-center text-[8px] text-white">IG</div>
+                    <div class="w-6 h-6 rounded-full bg-[#1877F2] border-2 border-white flex items-center justify-center text-[8px] text-white">FB</div>
+                  </div>
+                  <div class="text-left leading-tight">
+                    <h5 class="font-bold text-xs text-slate-600 uppercase tracking-tighter">Instagram & FB</h5>
+                    <p class="text-[9px] text-slate-400">Comments & DMs</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Center: ThinkOwl Orchestration Hub -->
+              <div class="relative z-20 order-1 lg:order-2">
+                <div class="w-48 h-48 lg:w-56 lg:h-56 bg-slate-900 rounded-full shadow-[0_20px_50px_rgba(15,118,110,0.3)] border-[8px] border-white flex flex-col items-center justify-center relative">
+                  <div class="absolute inset-0 rounded-full border border-white/20 animate-pulse scale-110"></div>
+                  <i data-lucide="brain-circuit" class="w-16 h-16 text-derma-400 mb-2"></i>
+                  <span class="text-xs font-bold text-white uppercase tracking-[0.2em] text-center px-4">ThinkOwl Hub</span>
+                  <span class="text-[8px] text-derma-300 mt-2 uppercase tracking-widest font-bold">Dermatouch Intelligence Core</span>
+                </div>
+              </div>
+
+              <!-- Right Column: Operational Systems (Back-End) -->
+              <div class="flex flex-col gap-4 w-full lg:w-72 relative z-10 order-3">
+                <div class="text-right mb-2 pr-2 border-r-2 border-slate-800 mr-1">
+                  <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Enterprise Systems</span>
+                </div>
+
+                <!-- Shopify Plus -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-slate-100 flex items-center justify-end gap-3 transform hover:translate-x-1 transition-transform border-r-4 border-[#95BF47]">
+                  <div class="text-right leading-tight">
+                    <h5 class="font-bold text-xs text-slate-800 uppercase italic">Shopify Plus</h5>
+                    <p class="text-[9px] text-slate-400">Order & Customer Sync</p>
+                  </div>
+                  <div class="w-8 h-8 rounded bg-[#95BF47] text-white flex items-center justify-center shrink-0">
+                    <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+                  </div>
+                </div>
+
+                <!-- Logistics Partners -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-slate-100 flex items-center justify-end gap-3 transform hover:translate-x-1 transition-transform">
+                  <div class="text-right leading-tight">
+                    <h5 class="font-bold text-xs text-slate-800 uppercase">Logistics</h5>
+                    <p class="text-[9px] text-slate-400">Shiprocket / Delhivery</p>
+                  </div>
+                  <div class="w-8 h-8 rounded bg-orange-600 text-white flex items-center justify-center shrink-0">
+                    <i data-lucide="truck" class="w-4 h-4"></i>
+                  </div>
+                </div>
+
+                <!-- Marketing Automation -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-slate-100 flex items-center justify-end gap-3 transform hover:translate-x-1 transition-transform">
+                  <div class="text-right leading-tight">
+                    <h5 class="font-bold text-xs text-slate-800 uppercase">Marketing</h5>
+                    <p class="text-[9px] text-slate-400">WebEngage / CleverTap</p>
+                  </div>
+                  <div class="w-8 h-8 rounded bg-purple-600 text-white flex items-center justify-center shrink-0">
+                    <i data-lucide="megaphone" class="w-4 h-4"></i>
+                  </div>
+                </div>
+
+                <!-- Payment Gateways -->
+                <div class="bg-white p-3 rounded-xl shadow-sm border border-slate-100 flex items-center justify-end gap-3 transform hover:translate-x-1 transition-transform">
+                  <div class="text-right leading-tight">
+                    <h5 class="font-bold text-xs text-slate-800 uppercase">Payments</h5>
+                    <p class="text-[9px] text-slate-400">Razorpay / Stripe</p>
+                  </div>
+                  <div class="w-8 h-8 rounded bg-blue-800 text-white flex items-center justify-center shrink-0">
+                    <i data-lucide="credit-card" class="w-4 h-4"></i>
+                  </div>
+                </div>
+
+                <!-- Warehouse/ERP -->
+                <div class="bg-slate-50 p-3 rounded-xl shadow-sm border border-slate-100 flex items-center justify-end gap-3 transform hover:translate-x-1 transition-transform">
+                  <div class="text-right leading-tight">
+                    <h5 class="font-bold text-xs text-slate-600 uppercase tracking-tighter">WMS / ERP</h5>
+                    <p class="text-[9px] text-slate-400">Inventory Sync</p>
+                  </div>
+                  <div class="w-8 h-8 rounded bg-slate-700 text-white flex items-center justify-center shrink-0">
+                    <i data-lucide="package" class="w-4 h-4"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ROI Stats -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto border-y border-slate-100 py-12">
+            <div class="text-center">
+              <div class="text-4xl font-serif font-bold text-derma-600 mb-2">40-70%</div>
+              <div class="text-xs font-bold text-slate-500 uppercase tracking-widest">Reduction in Handling Time</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-serif font-bold text-derma-600 mb-2">30%</div>
+              <div class="text-xs font-bold text-slate-500 uppercase tracking-widest">Revenue Uplift</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-serif font-bold text-derma-600 mb-2">2-3x</div>
+              <div class="text-xs font-bold text-slate-500 uppercase tracking-widest">Volume Scalability</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-serif font-bold text-derma-600 mb-2">24/7</div>
+              <div class="text-xs font-bold text-slate-500 uppercase tracking-widest">Autonomous Resolution</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Part 1: Core Capabilities - OwlDesk -->
+      <section class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+          <div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
+            <div class="max-w-2xl">
+              <span class="text-derma-600 font-bold text-xs tracking-widest uppercase mb-2 block">OwlDesk</span>
+              <h2 class="text-3xl md:text-4xl font-serif text-slate-900 leading-tight">
+                Unified Service Hub <br />
+                <span class="italic text-slate-500">The Agent Workspace</span>
+              </h2>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Feature 1: Unified Omnichannel Inbox -->
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-soft hover:shadow-lg transition-all duration-300 group">
+              <div class="w-12 h-12 bg-derma-50 rounded-xl flex items-center justify-center mb-6 text-derma-600 group-hover:bg-derma-600 group-hover:text-white transition-colors">
+                <i data-lucide="inbox" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-800 mb-3">Unified Omnichannel Inbox</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                All conversations from WhatsApp, Instagram, Facebook, Email, Website Chat, and Voice (Callerdesk) in one single screen. 360° customer view with no app switching.
+              </p>
+            </div>
+
+            <!-- Feature 2: Unified Social Media Ticket Management -->
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-soft hover:shadow-lg transition-all duration-300 group">
+              <div class="w-12 h-12 bg-derma-50 rounded-xl flex items-center justify-center mb-6 text-derma-600 group-hover:bg-derma-600 group-hover:text-white transition-colors">
+                <i data-lucide="globe" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-800 mb-3">Unified Social Media</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Capture queries from Instagram, Facebook, X, and Meta-linked pages in real-time. Zero limitations from Meta via official Business API. Single dashboard for management.
+              </p>
+            </div>
+
+            <!-- Feature 3: End-to-End Complaint Management -->
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-soft hover:shadow-lg transition-all duration-300 group">
+              <div class="w-12 h-12 bg-derma-50 rounded-xl flex items-center justify-center mb-6 text-derma-600 group-hover:bg-derma-600 group-hover:text-white transition-colors">
+                <i data-lucide="shield-alert" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-800 mb-3">Complaint Management</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Structured workflows to log, track, and resolve complaints. Features auto-logging, severity tagging, internal @mentions, file sharing, and root-cause analysis.
+              </p>
+            </div>
+
+            <!-- Feature 4: Shopify Integration -->
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-soft hover:shadow-lg transition-all duration-300 group">
+              <div class="w-12 h-12 bg-derma-50 rounded-xl flex items-center justify-center mb-6 text-derma-600 group-hover:bg-derma-600 group-hover:text-white transition-colors">
+                <i data-lucide="shopping-bag" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-800 mb-3">Shopify Integration</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Deep bidirectional sync. View real-time order details, variants, and return history directly in the ticket. Actions like refunds or notes sync back to Shopify instantly.
+              </p>
+            </div>
+
+            <!-- Feature 5: Logistics Complaint Escalation -->
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-soft hover:shadow-lg transition-all duration-300 group">
+              <div class="w-12 h-12 bg-derma-50 rounded-xl flex items-center justify-center mb-6 text-derma-600 group-hover:bg-derma-600 group-hover:text-white transition-colors">
+                <i data-lucide="truck" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-800 mb-3">Logistics Escalation</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Raise and track shipment complaints with logistics partners (Shiprocket, Delhivery, etc.) directly from the CRM. Auto-pulls tracking updates and sends customer notifications.
+              </p>
+            </div>
+
+            <!-- Feature 6: Telephony & Omnichannel Integration -->
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-soft hover:shadow-lg transition-all duration-300 group">
+              <div class="w-12 h-12 bg-derma-50 rounded-xl flex items-center justify-center mb-6 text-derma-600 group-hover:bg-derma-600 group-hover:text-white transition-colors">
+                <i data-lucide="phone" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-800 mb-3">Telephony Integration</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Native integration with Callerdesk. Voice calls appear alongside chats. Click-to-call, call transcription, and auto-summary ensure a complete omnichannel journey.
+              </p>
+            </div>
+
+            <!-- Feature 7: Customer Communication & Broadcast -->
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-soft hover:shadow-lg transition-all duration-300 group">
+              <div class="w-12 h-12 bg-derma-50 rounded-xl flex items-center justify-center mb-6 text-derma-600 group-hover:bg-derma-600 group-hover:text-white transition-colors">
+                <i data-lucide="megaphone" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-800 mb-3">Broadcast Capability</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Send targeted WhatsApp/SMS/Email broadcasts for delays or updates. Includes smart segmentation, approval workflows, and performance analytics.
+              </p>
+            </div>
+
+            <!-- Feature 8: Event-Based Messaging -->
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-soft hover:shadow-lg transition-all duration-300 group">
+              <div class="w-12 h-12 bg-derma-50 rounded-xl flex items-center justify-center mb-6 text-derma-600 group-hover:bg-derma-600 group-hover:text-white transition-colors">
+                <i data-lucide="bell-ring" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-800 mb-3">Event-Based Messaging</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Trigger automated messages based on specific events (e.g., Order Delivered, Refund Processed, Cart Abandoned) to proactively engage customers.
+              </p>
+            </div>
+
+            <!-- Feature 9: Advanced Analytics -->
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-soft hover:shadow-lg transition-all duration-300 group">
+              <div class="w-12 h-12 bg-derma-50 rounded-xl flex items-center justify-center mb-6 text-derma-600 group-hover:bg-derma-600 group-hover:text-white transition-colors">
+                <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-800 mb-3">Advanced Analytics</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Real-time dashboards on automation rate, handling time, CSAT drivers, topic trends, and agent performance. All exportable and actionable.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Part 2: Core Capabilities - OwlForce -->
+      <section class="py-24 bg-white border-t border-slate-100">
+        <div class="container mx-auto px-6">
+          <div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
+            <div class="max-w-2xl">
+              <span class="text-emerald-600 font-bold text-xs tracking-widest uppercase mb-2 block">OwlForce</span>
+              <h2 class="text-3xl md:text-4xl font-serif text-slate-900 leading-tight">
+                AI & Automation <br />
+                <span class="italic text-slate-500">The Intelligence Layer</span>
+              </h2>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- OwlForce Feature 1: Autonomous Agents -->
+            <div class="bg-emerald-50 p-8 rounded-3xl border border-emerald-100 shadow-soft hover:shadow-lg transition-all duration-300 group">
+              <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-6 text-emerald-600 group-hover:scale-110 transition-transform shadow-sm">
+                <i data-lucide="bot" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-800 mb-3">Autonomous AI Agents</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Fully autonomous agents handle 80-95% of routine queries (order status, returns, FAQs) end-to-end. Intelligent follow-ups ensure instant 24/7 resolution.
+              </p>
+            </div>
+
+            <!-- OwlForce Feature 2: AI Wingman (Copilot) -->
+            <div class="bg-emerald-50 p-8 rounded-3xl border border-emerald-100 shadow-soft hover:shadow-lg transition-all duration-300 group">
+              <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-6 text-emerald-600 group-hover:scale-110 transition-transform shadow-sm">
+                <i data-lucide="zap" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-800 mb-3">AI Wingman (Copilot)</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Real-time suggestions as you type. Pulls knowledge-base answers, detects sentiment, shows similar past cases, and recommends next-best actions.
+              </p>
+            </div>
+
+            <!-- OwlForce Feature 3: No-Code Workflow & RPA -->
+            <div class="bg-emerald-50 p-8 rounded-3xl border border-emerald-100 shadow-soft hover:shadow-lg transition-all duration-300 group">
+              <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-6 text-emerald-600 group-hover:scale-110 transition-transform shadow-sm">
+                <i data-lucide="workflow" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-800 mb-3">No-Code Workflow & RPA</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Visual BPMN designer with 400+ pre-built automations. Create end-to-end processes (Return → Approval → Label → Refund) that run autonomously.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Part 2: Comparison Section -->
+      <section class="py-24 bg-white border-t border-slate-100">
+        <div class="container mx-auto px-6">
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-derma-600 font-bold text-xs tracking-widest uppercase mb-2 block">Competitive Landscape</span>
+            <h2 class="text-3xl md:text-4xl font-serif text-slate-900 mb-6">ThinkOwl vs. The Rest</h2>
+            <p class="text-slate-500 text-lg leading-relaxed font-light">
+              A feature-by-feature breakdown based on 2026 delivery capabilities. Why ThinkOwl is the strategic choice over LimeChat, Zoho, and others.
+            </p>
+          </div>
+
+          <!-- Comparison Table -->
+          <div class="overflow-hidden rounded-3xl border border-slate-200 shadow-xl mb-12">
+            <table class="w-full text-sm text-left border-collapse">
+              <thead>
+                <tr class="bg-slate-900 text-white">
+                  <th class="p-6 font-serif text-lg font-medium w-1/4">Feature Category</th>
+                  <th class="p-6 bg-derma-600 text-white w-1/4 border-l border-derma-500 relative">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-white/20"></div>
+                    ThinkOwl
+                  </th>
+                  <th class="p-6 w-1/6 border-l border-slate-700 text-slate-300">LimeChat</th>
+                  <th class="p-6 w-1/6 border-l border-slate-700 text-slate-300">Zoho Desk</th>
+                  <th class="p-6 w-1/6 border-l border-slate-700 text-slate-300">Locobuzz</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100">
+                <!-- Row 1: Omnichannel Inbox -->
+                <tr class="hover:bg-slate-50 transition-colors">
+                  <td class="p-6 font-bold text-slate-800">Omnichannel Inbox</td>
+                  <td class="p-6 bg-derma-50/50 text-derma-900 font-medium border-l border-derma-100">
+                    Unified 360° Hub: Voice, Email, Social, WhatsApp in one view.
+                  </td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">WhatsApp-centric. Email & Voice often require separate tabs.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Multi-channel, but often requires switching between apps.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Strong on Social/Web. Email & Voice capabilities are basic.</td>
+                </tr>
+
+                <!-- Row 2: Customer 360 View -->
+                <tr class="hover:bg-slate-50 transition-colors">
+                  <td class="p-6 font-bold text-slate-800">Customer 360 View</td>
+                  <td class="p-6 bg-derma-50/50 text-derma-900 font-medium border-l border-derma-100">
+                    Deep E-commerce context: Orders, Returns, Logistics & History.
+                  </td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Chat history focus. Limited visibility into logistics/returns.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Generic CRM view. E-commerce context requires customization.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Social profile focus. Limited transactional history.</td>
+                </tr>
+
+                <!-- Row 3: Workflow Automation -->
+                <tr class="hover:bg-slate-50 transition-colors">
+                  <td class="p-6 font-bold text-slate-800">Workflow Automation</td>
+                  <td class="p-6 bg-derma-50/50 text-derma-900 font-medium border-l border-derma-100">
+                    Visual BPMN + RPA. Automates complex backend processes.
+                  </td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Chat flows only. Lacks backend process automation.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Blueprints are powerful but complex to set up and maintain.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Rule-based routing. Lacks deep process automation.</td>
+                </tr>
+
+                <!-- Row 4: Bi-directional Integration -->
+                <tr class="hover:bg-slate-50 transition-colors">
+                  <td class="p-6 font-bold text-slate-800">Bi-directional Integration</td>
+                  <td class="p-6 bg-derma-50/50 text-derma-900 font-medium border-l border-derma-100">
+                    Native Shopify/Logistics sync. Actions reflect instantly.
+                  </td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Good Shopify sync. Limited deep logistics integration.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Best with Zoho suite. 3rd party integrations can be rigid.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">API-first. Deep integrations often require custom dev.</td>
+                </tr>
+
+                <!-- Row 5: Vendor Support -->
+                <tr class="hover:bg-slate-50 transition-colors">
+                  <td class="p-6 font-bold text-slate-800">Vendor Support</td>
+                  <td class="p-6 bg-derma-50/50 text-derma-900 font-medium border-l border-derma-100">
+                    Strategic Partnership: Dedicated Success Manager included.
+                  </td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Standard ticket-based support.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Partner-dependent or tiered support plans.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Standard support structure.</td>
+                </tr>
+
+                <!-- Row 6: Cross Channel Communication -->
+                <tr class="hover:bg-slate-50 transition-colors">
+                  <td class="p-6 font-bold text-slate-800">Cross Channel Continuity</td>
+                  <td class="p-6 bg-derma-50/50 text-derma-900 font-medium border-l border-derma-100">
+                    Seamless context preservation across all channels.
+                  </td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Context often lost when switching from Chat to Voice.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Good, but fragmented across different modules.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Social context is strong; cross-channel often disjointed.</td>
+                </tr>
+
+                <!-- Row 7: UI/UX -->
+                <tr class="hover:bg-slate-50 transition-colors">
+                  <td class="p-6 font-bold text-slate-800">UI/UX</td>
+                  <td class="p-6 bg-derma-50/50 text-derma-900 font-medium border-l border-derma-100">
+                    Modern, Agent-Centric. Minimal clicks, high efficiency.
+                  </td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Chat-optimized. Can be cluttered for complex tickets.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Traditional enterprise interface. Steeper learning curve.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Data-heavy. Geared towards analysts, not agents.</td>
+                </tr>
+
+                <!-- Row 8: Future Scalability -->
+                <tr class="hover:bg-slate-50 transition-colors">
+                  <td class="p-6 font-bold text-slate-800">Future Scalability</td>
+                  <td class="p-6 bg-derma-50/50 text-derma-900 font-medium border-l border-derma-100">
+                    Enterprise-ready. Scales effortlessly with volume.
+                  </td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Optimized for D2C chat volume. May struggle with complexity.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Scalable, but costs rise significantly with add-ons.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Scales well for social data, less for operational depth.</td>
+                </tr>
+
+                <!-- Row 9: AI Chatbot & Voice Bot -->
+                <tr class="hover:bg-slate-50 transition-colors">
+                  <td class="p-6 font-bold text-slate-800">AI Chatbot & Voice Bot</td>
+                  <td class="p-6 bg-derma-50/50 text-derma-900 font-medium border-l border-derma-100">
+                    Native GenAI for Text & Voice. Context-aware & transactional.
+                  </td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Strong WhatsApp bot. No native Voice AI capabilities.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Zia is capable but requires extensive training.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Rule-based bots. Lacks native conversational Voice AI.</td>
+                </tr>
+
+                <!-- Row 10: Voice Synthesis -->
+                <tr class="hover:bg-slate-50 transition-colors">
+                  <td class="p-6 font-bold text-slate-800">Voice Synthesis</td>
+                  <td class="p-6 bg-derma-50/50 text-derma-900 font-medium border-l border-derma-100">
+                    Native TTS in regional accents for personalized automation.
+                  </td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Not available natively.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Limited native capabilities.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Not available.</td>
+                </tr>
+
+                <!-- Row 11: WhatsApp Calling -->
+                <tr class="hover:bg-slate-50 transition-colors">
+                  <td class="p-6 font-bold text-slate-800">WhatsApp Calling</td>
+                  <td class="p-6 bg-derma-50/50 text-derma-900 font-medium border-l border-derma-100">
+                    Native inbound/outbound calls via WhatsApp Business.
+                  </td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Supported, but lacks deep CRM logging.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Requires third-party extensions.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Not available natively.</td>
+                </tr>
+
+                <!-- Row 12: Agent Assist (Wingman) -->
+                <tr class="hover:bg-slate-50 transition-colors">
+                  <td class="p-6 font-bold text-slate-800">Agent Assist (Wingman)</td>
+                  <td class="p-6 bg-derma-50/50 text-derma-900 font-medium border-l border-derma-100">
+                    Real-time guidance, sentiment, & translation in one view.
+                  </td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Basic canned responses. Lacks real-time coaching.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Zia suggestions are helpful but passive.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Response suggestions available. Lacks deep coaching.</td>
+                </tr>
+
+                <!-- Row 13: Quality (AI & Manual) -->
+                <tr class="hover:bg-slate-50 transition-colors">
+                  <td class="p-6 font-bold text-slate-800">Quality Management</td>
+                  <td class="p-6 bg-derma-50/50 text-derma-900 font-medium border-l border-derma-100">
+                    100% AI Scoring + Manual Audits. Total coverage.
+                  </td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Basic sampling. Lacks comprehensive AI scoring.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Manual QA forms. No native AI-driven scoring.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Social-focused QA. Lacks operational audit depth.</td>
+                </tr>
+
+                <!-- Row 14: Analytics & Reporting -->
+                <tr class="hover:bg-slate-50 transition-colors">
+                  <td class="p-6 font-bold text-slate-800">Analytics & Reporting</td>
+                  <td class="p-6 bg-derma-50/50 text-derma-900 font-medium border-l border-derma-100">
+                    Actionable insights on Ops, CX, & Revenue.
+                  </td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Chat metrics focus. Limited operational depth.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Comprehensive but complex to customize.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Excellent social listening metrics. Weaker operational KPIs.</td>
+                </tr>
+
+                <!-- Row 15: Survey Bot Builder -->
+                <tr class="hover:bg-slate-50 transition-colors">
+                  <td class="p-6 font-bold text-slate-800">Survey Bot Builder</td>
+                  <td class="p-6 bg-derma-50/50 text-derma-900 font-medium border-l border-derma-100">
+                    Visual builder for any channel (WhatsApp, Web, Email).
+                  </td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">WhatsApp-only surveys.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Requires Zoho Survey integration.</td>
+                  <td class="p-6 text-slate-600 border-l border-slate-100">Basic feedback forms.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- LimeChat Specific Callout -->
+          <div class="bg-slate-900 rounded-2xl p-8 text-white relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-derma-500 opacity-20 blur-[80px] rounded-full"></div>
+            <div class="relative z-10">
+              <h3 class="text-2xl font-serif font-bold mb-4">Why ThinkOwl Wins vs. LimeChat</h3>
+              <p class="text-slate-300 mb-6 max-w-3xl">
+                LimeChat is excellent for WhatsApp commerce, but ThinkOwl turns your entire customer service operation into a scalable, AI-powered profit center across ALL channels.
+              </p>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Point 1 -->
+                <div class="flex items-start gap-3">
+                  <div class="p-1 bg-derma-500/20 rounded mt-1"><i data-lucide="check" class="w-4 h-4 text-derma-400"></i></div>
+                  <div class="text-sm text-slate-300"><strong class="text-white block mb-1">True Omnichannel Depth</strong> Unified Voice, Email, Social & WhatsApp vs. WhatsApp-only focus.</div>
+                </div>
+                <!-- Point 2 -->
+                <div class="flex items-start gap-3">
+                  <div class="p-1 bg-derma-500/20 rounded mt-1"><i data-lucide="check" class="w-4 h-4 text-derma-400"></i></div>
+                  <div class="text-sm text-slate-300"><strong class="text-white block mb-1">Native GenAI Core</strong> Built-in AI for Text & Voice bots vs. Rule-based or add-on AI.</div>
+                </div>
+                <!-- Point 3 -->
+                <div class="flex items-start gap-3">
+                  <div class="p-1 bg-derma-500/20 rounded mt-1"><i data-lucide="check" class="w-4 h-4 text-derma-400"></i></div>
+                  <div class="text-sm text-slate-300"><strong class="text-white block mb-1">Process Automation</strong> Visual BPMN for complex backend workflows vs. Simple chat flows.</div>
+                </div>
+                <!-- Point 4 -->
+                <div class="flex items-start gap-3">
+                  <div class="p-1 bg-derma-500/20 rounded mt-1"><i data-lucide="check" class="w-4 h-4 text-derma-400"></i></div>
+                  <div class="text-sm text-slate-300"><strong class="text-white block mb-1">Deep Shopify Sync</strong> Bi-directional order actions (Refund/Cancel) vs. View-only data.</div>
+                </div>
+                <!-- Point 5 -->
+                <div class="flex items-start gap-3">
+                  <div class="p-1 bg-derma-500/20 rounded mt-1"><i data-lucide="check" class="w-4 h-4 text-derma-400"></i></div>
+                  <div class="text-sm text-slate-300"><strong class="text-white block mb-1">Real-Time Copilot</strong> Live sentiment & answer guidance vs. Static canned responses.</div>
+                </div>
+                <!-- Point 6 -->
+                <div class="flex items-start gap-3">
+                  <div class="p-1 bg-derma-500/20 rounded mt-1"><i data-lucide="check" class="w-4 h-4 text-derma-400"></i></div>
+                  <div class="text-sm text-slate-300"><strong class="text-white block mb-1">Strategic Partnership</strong> Dedicated Success Manager & QBRs vs. Standard ticket support.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Future State Vision -->
+      <section class="py-20 bg-slate-50 border-b border-slate-200">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-derma-600 font-bold text-xs tracking-widest uppercase mb-2 block">Vision</span>
+                <h2 class="text-3xl md:text-4xl font-serif text-slate-900 mb-6">The DermaTouch Future State</h2>
+                <p class="text-slate-500 text-lg font-light">Powered by ThinkOwl</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 relative overflow-hidden group hover:shadow-md transition-all">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-derma-500"></div>
+                    <div class="w-12 h-12 bg-derma-50 rounded-xl flex items-center justify-center mb-6 text-derma-600">
+                        <i data-lucide="layers" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Omnichannel Hub</h3>
+                    <p class="text-slate-600 text-sm mb-6">Unify WhatsApp, Instagram DMs, Website Chat, and Email into a single, seamless agent workspace.</p>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Impact</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start gap-2 text-xs text-slate-700"><i data-lucide="arrow-up-right" class="w-3 h-3 text-green-500 mt-0.5"></i> <span><strong>60% reduction</strong> in response times</span></li>
+                            <li class="flex items-start gap-2 text-xs text-slate-700"><i data-lucide="arrow-up-right" class="w-3 h-3 text-green-500 mt-0.5"></i> <span><strong>40% increase</strong> in engagement</span></li>
+                            <li class="flex items-start gap-2 text-xs text-slate-700"><i data-lucide="check" class="w-3 h-3 text-green-500 mt-0.5"></i> <span>Eliminate missed social inquiries</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 relative overflow-hidden group hover:shadow-md transition-all">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-purple-500"></div>
+                    <div class="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mb-6 text-purple-600">
+                        <i data-lucide="bot" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">AI Automation Layer</h3>
+                    <p class="text-slate-600 text-sm mb-6">Automate order status checks, product recommendations, returns, and FAQs with intelligent, 24/7 AI.</p>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Impact</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start gap-2 text-xs text-slate-700"><i data-lucide="arrow-up-right" class="w-3 h-3 text-green-500 mt-0.5"></i> <span><strong>70% of routine inquiries</strong> automated</span></li>
+                            <li class="flex items-start gap-2 text-xs text-slate-700"><i data-lucide="check" class="w-3 h-3 text-green-500 mt-0.5"></i> <span>Smart routing to specialized agents</span></li>
+                            <li class="flex items-start gap-2 text-xs text-slate-700"><i data-lucide="check" class="w-3 h-3 text-green-500 mt-0.5"></i> <span>Instant 24/7 responses</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 relative overflow-hidden group hover:shadow-md transition-all">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-blue-500"></div>
+                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6 text-blue-600">
+                        <i data-lucide="heart" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Proactive Success</h3>
+                    <p class="text-slate-600 text-sm mb-6">Move from reactive to proactive engagement with automated welcome series and replenishment alerts.</p>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Impact</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start gap-2 text-xs text-slate-700"><i data-lucide="arrow-up-right" class="w-3 h-3 text-green-500 mt-0.5"></i> <span><strong>25% improvement</strong> in retention</span></li>
+                            <li class="flex items-start gap-2 text-xs text-slate-700"><i data-lucide="arrow-up-right" class="w-3 h-3 text-green-500 mt-0.5"></i> <span><strong>20% increase</strong> in repeat purchases</span></li>
+                            <li class="flex items-start gap-2 text-xs text-slate-700"><i data-lucide="check" class="w-3 h-3 text-green-500 mt-0.5"></i> <span>Enhanced lifetime value</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Trusted By Section -->
+      <section class="py-12 bg-white border-b border-slate-100">
+        <div class="container mx-auto px-6 text-center">
+          <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Trusted by Industry Leaders</p>
+          <p class="text-slate-500 text-sm mb-8">Powering customer experience for the world's most innovative brands.</p>
+          <div class="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+            <!-- Placeholders for Logos -->
+            <div class="h-8 w-32 bg-slate-200 rounded animate-pulse"></div>
+            <div class="h-8 w-32 bg-slate-200 rounded animate-pulse"></div>
+            <div class="h-8 w-32 bg-slate-200 rounded animate-pulse"></div>
+            <div class="h-8 w-32 bg-slate-200 rounded animate-pulse"></div>
+            <div class="h-8 w-32 bg-slate-200 rounded animate-pulse"></div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- Revenue Generator Section -->
+      <section class="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <!-- Background Glow -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-derma-600 rounded-full blur-[120px] opacity-20"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600 rounded-full blur-[120px] opacity-20"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-derma-400 font-bold text-xs tracking-widest uppercase mb-2 block">Revenue Generator</span>
+                <h2 class="text-3xl md:text-5xl font-serif text-white mb-6">Turn Service into <br/><span class="italic text-derma-400">Revenue Streams</span></h2>
+                <p class="text-slate-400 text-lg leading-relaxed font-light">
+                    Stop treating support as a cost center. ThinkOwl empowers agents to drive sales through intelligent context and timely interventions.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Column: Features -->
+                <div class="grid grid-cols-1 gap-6">
+                    <!-- Card 1 -->
+                    <div class="bg-white/5 border border-white/10 p-6 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-colors flex gap-4">
+                        <div class="w-12 h-12 bg-derma-500/20 rounded-xl flex items-center justify-center shrink-0 text-derma-400">
+                            <i data-lucide="shopping-cart" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-2">Abandoned Cart Recovery</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Proactively trigger WhatsApp nudges when a high-value cart is abandoned, offering instant assistance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white/5 border border-white/10 p-6 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-colors flex gap-4">
+                        <div class="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center shrink-0 text-purple-400">
+                            <i data-lucide="trending-up" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-2">Smart Cross-Selling</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                AI analyzes purchase history to suggest complementary products (e.g., "Customers who bought this also love...").
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white/5 border border-white/10 p-6 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-colors flex gap-4">
+                        <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center shrink-0 text-blue-400">
+                            <i data-lucide="star" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-2">Review Generation</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Automatically solicit reviews from happy customers immediately after a successful resolution.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Mock iPhone -->
+                <div class="flex justify-center">
+                    <div class="relative mx-auto border-slate-800 bg-slate-800 border-[12px] rounded-[2.5rem] h-[550px] w-[280px] shadow-2xl">
+                        <div class="w-[120px] h-[18px] bg-slate-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute z-20"></div>
+                        <div class="h-[32px] w-[3px] bg-slate-800 absolute -left-[15px] top-[72px] rounded-l-lg"></div>
+                        <div class="h-[46px] w-[3px] bg-slate-800 absolute -left-[15px] top-[124px] rounded-l-lg"></div>
+                        <div class="h-[64px] w-[3px] bg-slate-800 absolute -right-[15px] top-[142px] rounded-r-lg"></div>
+                        <div class="rounded-[2rem] overflow-hidden w-full h-full bg-slate-50 relative">
+                            <!-- Screen Content -->
+                            <div class="h-full flex flex-col font-sans">
+                                <!-- Header -->
+                                <div class="bg-[#075E54] p-4 pt-10 text-white flex items-center gap-3 shadow-sm">
+                                    <div class="w-8 h-8 rounded-full bg-white text-[#075E54] flex items-center justify-center font-bold text-xs">D</div>
+                                    <div>
+                                        <div class="text-xs font-bold">Dermatouch</div>
+                                        <div class="text-[9px] opacity-80">Official Business Account</div>
+                                    </div>
+                                </div>
+                                <!-- Chat Area -->
+                                <div class="flex-1 p-3 space-y-3 overflow-y-auto text-[10px] bg-[#E5DDD5]">
+                                    <!-- Message 1: Abandoned Cart -->
+                                    <div class="flex flex-col gap-1 items-start">
+                                        <div class="bg-white p-2 rounded-lg rounded-tl-none shadow-sm max-w-[90%] text-slate-800">
+                                            Hi Priya! 👋 We noticed you left the <strong>Salicylic Acid Face Wash</strong> in your cart.
+                                        </div>
+                                        <div class="text-[8px] text-slate-500 ml-1">10:30 AM</div>
+                                    </div>
+                                    
+                                    <!-- Message 2: Cross Sell -->
+                                    <div class="flex flex-col gap-1 items-start">
+                                        <div class="bg-white p-2 rounded-lg rounded-tl-none shadow-sm max-w-[90%] text-slate-800">
+                                            Since you have oily skin, customers also love our <strong>Niacinamide Serum</strong> to control sebum! 💧
+                                            <br><br>
+                                            <span class="text-[#075E54] font-bold">Add to order with 10% OFF?</span>
+                                        </div>
+                                        <div class="text-[8px] text-slate-500 ml-1">10:31 AM</div>
+                                    </div>
+
+                                    <!-- Message 3: User Reply -->
+                                    <div class="flex flex-col gap-1 items-end">
+                                        <div class="bg-[#DCF8C6] p-2 rounded-lg rounded-tr-none shadow-sm max-w-[90%] text-slate-800">
+                                            Yes, please add it! Also, when will this be delivered?
+                                        </div>
+                                        <div class="text-[8px] text-slate-500 mr-1">10:32 AM</div>
+                                    </div>
+
+                                    <!-- Message 4: Delivery Update -->
+                                    <div class="flex flex-col gap-1 items-start">
+                                        <div class="bg-white p-2 rounded-lg rounded-tl-none shadow-sm max-w-[90%] text-slate-800">
+                                            Done! 🎉 Order updated.
+                                            <br><br>
+                                            It will arrive by <strong>Thursday, 14th March</strong> via Delhivery.
+                                        </div>
+                                        <div class="text-[8px] text-slate-500 ml-1">10:32 AM</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Expected ROI & Business Impact -->
+      <section class="py-24 bg-white border-t border-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-derma-600 font-bold text-xs tracking-widest uppercase mb-2 block">Business Case</span>
+                <h2 class="text-3xl md:text-4xl font-serif text-slate-900 mb-6">Expected ROI & Business Impact</h2>
+                <p class="text-slate-500 text-lg font-light">Measurable outcomes designed to drive growth and efficiency.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Operational Efficiency -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                    <h3 class="font-bold text-slate-900 mb-4 flex items-center gap-2"><i data-lucide="zap" class="w-4 h-4 text-derma-600"></i> Operational Efficiency</h3>
+                    <ul class="space-y-3">
+                        <li class="text-sm text-slate-600"><strong class="text-slate-900 block text-lg">50%</strong> reduction in AHT</li>
+                        <li class="text-sm text-slate-600"><strong class="text-slate-900 block text-lg">70%</strong> automated tickets</li>
+                        <li class="text-sm text-slate-600"><strong class="text-slate-900 block text-lg">40%</strong> better FCR</li>
+                    </ul>
+                </div>
+                <!-- Customer Experience -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                    <h3 class="font-bold text-slate-900 mb-4 flex items-center gap-2"><i data-lucide="smile" class="w-4 h-4 text-derma-600"></i> Customer Experience</h3>
+                    <ul class="space-y-3">
+                        <li class="text-sm text-slate-600"><strong class="text-slate-900 block text-lg">90%</strong> faster responses</li>
+                        <li class="text-sm text-slate-600"><strong class="text-slate-900 block text-lg">35%</strong> increase in CSAT</li>
+                        <li class="text-sm text-slate-600"><strong class="text-slate-900 block text-lg">25%</strong> better retention</li>
+                    </ul>
+                </div>
+                <!-- Business Growth -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                    <h3 class="font-bold text-slate-900 mb-4 flex items-center gap-2"><i data-lucide="trending-up" class="w-4 h-4 text-derma-600"></i> Business Growth</h3>
+                    <ul class="space-y-3">
+                        <li class="text-sm text-slate-600"><strong class="text-slate-900 block text-lg">20%</strong> more repeat buys</li>
+                        <li class="text-sm text-slate-600"><strong class="text-slate-900 block text-lg">15%</strong> boost in AOV</li>
+                        <li class="text-sm text-slate-600"><strong class="text-slate-900 block text-lg">30%</strong> fewer returns</li>
+                    </ul>
+                </div>
+                <!-- Cost Optimization -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                    <h3 class="font-bold text-slate-900 mb-4 flex items-center gap-2"><i data-lucide="coins" class="w-4 h-4 text-derma-600"></i> Cost Optimization</h3>
+                    <ul class="space-y-3">
+                        <li class="text-sm text-slate-600"><strong class="text-slate-900 block text-lg">40%</strong> lower support costs</li>
+                        <li class="text-sm text-slate-600"><strong class="text-slate-900 block text-lg">0 hrs</strong> manual data entry</li>
+                        <li class="text-sm text-slate-600"><strong class="text-slate-900 block text-lg">Reduced</strong> training time</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Transformation Roadmap -->
+      <section class="py-24 bg-slate-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-derma-400 font-bold text-xs tracking-widest uppercase mb-2 block">Implementation</span>
+                <h2 class="text-3xl md:text-4xl font-serif text-white mb-6">Your 3-Month Transformation Roadmap</h2>
+                <p class="text-slate-400 text-lg font-light">A strategic, phased approach for a seamless transition.</p>
+            </div>
+
+            <div class="relative">
+                <!-- Connecting Line -->
+                <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-slate-700 -translate-y-1/2 z-0"></div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+                    <!-- Phase 1 -->
+                    <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-derma-500 transition-colors">
+                        <div class="w-12 h-12 bg-derma-600 rounded-full flex items-center justify-center text-white font-bold text-xl mb-6 shadow-lg shadow-derma-900/50 mx-auto md:mx-0">1</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Foundation <span class="text-sm font-normal text-slate-400 ml-2">(Month 1)</span></h3>
+                        <ul class="space-y-3 text-sm text-slate-300 mt-4">
+                            <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-derma-500 mt-0.5"></i> Platform setup & config</li>
+                            <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-derma-500 mt-0.5"></i> Omnichannel integration</li>
+                            <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-derma-500 mt-0.5"></i> Essential automation rules</li>
+                        </ul>
+                    </div>
+
+                    <!-- Phase 2 -->
+                    <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-derma-500 transition-colors">
+                        <div class="w-12 h-12 bg-derma-600 rounded-full flex items-center justify-center text-white font-bold text-xl mb-6 shadow-lg shadow-derma-900/50 mx-auto md:mx-0">2</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Intelligence <span class="text-sm font-normal text-slate-400 ml-2">(Month 2)</span></h3>
+                        <ul class="space-y-3 text-sm text-slate-300 mt-4">
+                            <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-derma-500 mt-0.5"></i> AI categorization & routing</li>
+                            <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-derma-500 mt-0.5"></i> E-commerce integrations</li>
+                            <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-derma-500 mt-0.5"></i> Performance dashboards</li>
+                        </ul>
+                    </div>
+
+                    <!-- Phase 3 -->
+                    <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-derma-500 transition-colors">
+                        <div class="w-12 h-12 bg-derma-600 rounded-full flex items-center justify-center text-white font-bold text-xl mb-6 shadow-lg shadow-derma-900/50 mx-auto md:mx-0">3</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Optimization <span class="text-sm font-normal text-slate-400 ml-2">(Month 3)</span></h3>
+                        <ul class="space-y-3 text-sm text-slate-300 mt-4">
+                            <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-derma-500 mt-0.5"></i> Workflow customization</li>
+                            <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-derma-500 mt-0.5"></i> Advanced analytics</li>
+                            <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-derma-500 mt-0.5"></i> Proactive campaigns</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Commercial Framework -->
+      <section class="py-24 bg-white border-t border-slate-100 print:break-before-page">
+        <div class="container mx-auto px-6">
+            <div class="mb-16 text-center max-w-3xl mx-auto">
+                <span class="text-derma-600 font-bold text-xs tracking-widest uppercase mb-2 block">Investment Structure</span>
+                <h2 class="text-4xl md:text-5xl font-serif text-slate-900 mb-6">Commercial Framework</h2>
+                <p class="text-slate-500 text-lg leading-relaxed font-light">
+                    A transparent model separating Core Human Licensing from AI Consumption. We don't work on session-based billing as we want to be transparent with our customers. We charge on the basis of usage, which in the longer term is a way to optimize cost.
+                </p>
+            </div>
+
+            <!-- Pricing Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <!-- Foundation: OwlDesk -->
+                <div class="bg-slate-50 rounded-3xl border border-slate-200 p-8 relative overflow-hidden group hover:border-derma-300 transition-all">
+                    <div class="absolute top-0 right-0 bg-slate-200 text-slate-600 text-[10px] font-bold px-3 py-1 rounded-bl-xl uppercase tracking-widest">Foundation</div>
+                    <h3 class="text-2xl font-serif font-bold text-slate-900 mb-2">OwlDesk Enterprise Plus</h3>
+                    <p class="text-slate-500 text-sm mb-6 h-10">The unified workspace for your human agents. Includes Omnichannel Inbox, CRM, Knowledge Base, and Standard Reporting.</p>
+                    
+                    <div class="flex items-baseline gap-2 mb-8">
+                        <span class="text-slate-400 line-through text-lg">₹6,500</span>
+                        <span class="text-4xl font-bold text-slate-900">₹5,000</span>
+                        <span class="text-slate-500 text-xs font-medium">/ User / Month (Billed Annually)</span>
+                    </div>
+
+                    <ul class="space-y-3 mb-8 grid grid-cols-1 md:grid-cols-2 gap-x-4">
+                        <li class="flex items-center gap-3 text-sm text-slate-700"><i data-lucide="check-circle-2" class="w-4 h-4 text-derma-600"></i> Unified Inbox (All Channels)</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700"><i data-lucide="check-circle-2" class="w-4 h-4 text-derma-600"></i> SLA & Escalation Matrices</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700"><i data-lucide="check-circle-2" class="w-4 h-4 text-derma-600"></i> Customer 360 View</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700"><i data-lucide="check-circle-2" class="w-4 h-4 text-derma-600"></i> Smart Routing Engine</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700"><i data-lucide="check-circle-2" class="w-4 h-4 text-derma-600"></i> Knowledge Base Mgmt</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700"><i data-lucide="check-circle-2" class="w-4 h-4 text-derma-600"></i> Standard Reporting</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700"><i data-lucide="check-circle-2" class="w-4 h-4 text-derma-600"></i> Internal Collaboration</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700"><i data-lucide="check-circle-2" class="w-4 h-4 text-derma-600"></i> Canned Responses</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700"><i data-lucide="check-circle-2" class="w-4 h-4 text-derma-600"></i> CSAT Surveys</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-700"><i data-lucide="check-circle-2" class="w-4 h-4 text-derma-600"></i> Role-Based Access</li>
+                    </ul>
+                </div>
+
+                <!-- Automation: OwlForce -->
+                <div class="bg-slate-900 rounded-3xl border border-slate-800 p-8 relative overflow-hidden text-white group hover:border-derma-500 transition-all">
+                    <div class="absolute top-0 right-0 bg-derma-600 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl uppercase tracking-widest">Automation Platform</div>
+                    <div class="absolute -bottom-12 -right-12 w-48 h-48 bg-derma-500 rounded-full blur-[80px] opacity-20"></div>
+                    
+                    <h3 class="text-2xl font-serif font-bold text-white mb-2">OwlForce Platform</h3>
+                    <p class="text-slate-400 text-sm mb-6 h-10">Gen AI Chatbot and VoiceBot platform. Features Real-Time Voice Synthesis.</p>
+                    
+                    <div class="bg-white/5 rounded-xl p-4 mb-8 border border-white/10">
+                        <div class="flex justify-between items-center border-b border-white/10 pb-3 mb-3">
+                            <div class="flex items-center gap-3">
+                                <div class="p-2 bg-derma-500/20 rounded-lg text-derma-400"><i data-lucide="message-square" class="w-4 h-4"></i></div>
+                                <div>
+                                    <div class="text-sm font-bold text-white">AI Messages</div>
+                                    <div class="text-[10px] text-slate-400">Min. Commitment: 25,000</div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-white">₹0.50</div>
+                                <div class="text-[10px] text-slate-400">per message</div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center gap-3">
+                                <div class="p-2 bg-purple-500/20 rounded-lg text-purple-400"><i data-lucide="mic" class="w-4 h-4"></i></div>
+                                <div>
+                                    <div class="text-sm font-bold text-white">AI Voice Calls</div>
+                                    <div class="text-[10px] text-slate-400">Pay as you go</div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-white">₹6.00</div>
+                                <div class="text-[10px] text-slate-400">per minute</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="space-y-3 mb-8 relative z-10 grid grid-cols-1 md:grid-cols-2 gap-x-4">
+                        <li class="flex items-center gap-3 text-sm text-slate-300"><i data-lucide="bot" class="w-4 h-4 text-derma-400"></i> GenAI Chatbots</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-300"><i data-lucide="mic" class="w-4 h-4 text-derma-400"></i> GenAI Voicebots</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-300"><i data-lucide="languages" class="w-4 h-4 text-derma-400"></i> Language Detection</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-300"><i data-lucide="arrow-right-left" class="w-4 h-4 text-derma-400"></i> Seamless Agent Handoff</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-300"><i data-lucide="smile" class="w-4 h-4 text-derma-400"></i> Sentiment Analysis</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-300"><i data-lucide="brain" class="w-4 h-4 text-derma-400"></i> Intent Recognition</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-300"><i data-lucide="message-square" class="w-4 h-4 text-derma-400"></i> Multi-turn Conversations</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-300"><i data-lucide="history" class="w-4 h-4 text-derma-400"></i> Context Retention</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-300"><i data-lucide="webhook" class="w-4 h-4 text-derma-400"></i> API Integrations</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-300"><i data-lucide="globe" class="w-4 h-4 text-derma-400"></i> Omni-channel Deploy</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Intelligence Modules -->
+            <h3 class="text-center text-xl font-serif font-bold text-slate-900 mb-8">Select Your Intelligence Modules</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+                <!-- AI Quality Mgmt -->
+                <div class="border border-slate-200 rounded-2xl p-6 hover:shadow-md transition-all">
+                    <div class="flex justify-between items-start mb-4">
+                        <h4 class="font-bold text-slate-800">AI Quality Mgmt</h4>
+                        <span class="text-derma-600 font-bold">₹1,500 <span class="text-xs text-slate-500 font-normal">/ User / Month</span></span>
+                    </div>
+                    <p class="text-xs text-slate-500 mb-4">Automated scoring of 100% of interactions. No human sampling bias.</p>
+                    <div class="text-[10px] bg-slate-50 p-2 rounded text-slate-600">
+                        <strong>Includes:</strong> 500 Cases / Agent<br>
+                        <strong>Overage:</strong> ₹1.5 / Case (Text & Voice)
+                    </div>
+                </div>
+
+                <!-- AI Agent Assist -->
+                <div class="border-2 border-derma-500 rounded-2xl p-6 relative shadow-md">
+                    <div class="absolute -top-3 left-6 bg-derma-500 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">Popular</div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h4 class="font-bold text-slate-800">AI Agent Assist</h4>
+                        <span class="text-derma-600 font-bold">₹1,500 <span class="text-xs text-slate-500 font-normal">/ User / Month</span></span>
+                    </div>
+                    <p class="text-xs text-slate-500 mb-4">Real-time suggestions, smart replies, and Live Translation.</p>
+                    <div class="text-[10px] bg-derma-50 p-2 rounded text-derma-800">
+                        <strong>Includes:</strong> 500 Cases / Agent<br>
+                        <strong>Overage:</strong> ₹0.30 / Feature
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fair Billing Promise -->
+            <div class="bg-slate-50 rounded-3xl p-8 md:p-12 mb-16">
+                <div class="flex flex-col md:flex-row gap-12 items-center">
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-serif font-bold text-slate-900 mb-4">The "Fair Billing" Promise</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Most platforms charge you for "Sessions" (24-hour windows). If a customer says "Hi" and leaves, you pay for the full session.
+                        </p>
+                        <p class="text-slate-800 font-medium text-sm leading-relaxed mb-6">
+                            ThinkOwl is different. We bill on exact consumption units with granular precision. This ensures you save money on short interactions and only pay for value delivered.
+                        </p>
+                        <div class="flex items-center gap-2 text-xs font-bold text-derma-700 uppercase tracking-wider">
+                            <i data-lucide="check" class="w-4 h-4"></i> Real-Time Translation Billed per character
+                        </div>
+                    </div>
+                    
+                    <!-- Sample Invoice -->
+                    <div class="flex-1 w-full max-w-sm">
+                        <div class="bg-white rounded-xl shadow-lg border border-slate-200 p-6 rotate-2 hover:rotate-0 transition-transform duration-300">
+                            <div class="flex justify-between items-center mb-4 border-b border-slate-100 pb-2">
+                                <span class="text-xs font-bold text-slate-400 uppercase">Sample Monthly Invoice</span>
+                                <span class="text-xs font-bold text-green-600 bg-green-50 px-2 py-1 rounded">PAID</span>
+                            </div>
+                            <div class="space-y-3 text-sm">
+                                <div class="flex justify-between">
+                                    <span class="text-slate-600">Agent Assist Usage <br><span class="text-[10px] text-slate-400">21,325 units × ₹0.30</span></span>
+                                    <span class="font-medium text-slate-900">₹6,397.50</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-600">AI Agent Text (Overage) <br><span class="text-[10px] text-slate-400">3,850 Msgs × ₹0.50</span></span>
+                                    <span class="font-medium text-slate-900">₹1,925.00</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-600">AI Agent Voice (Overage) <br><span class="text-[10px] text-slate-400">800 Mins × ₹6.00</span></span>
+                                    <span class="font-medium text-slate-900">₹4,800.00</span>
+                                </div>
+                                <div class="border-t border-slate-100 pt-3 flex justify-between items-center">
+                                    <span class="font-bold text-slate-800">Total Consumption</span>
+                                    <span class="font-bold text-derma-600 text-lg">₹13,122.50</span>
+                                </div>
+                            </div>
+                            <p class="text-[9px] text-slate-400 mt-4 text-center italic">*Billing applies only after base allocations are exhausted.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why Message Based Billing -->
+            <div class="mb-16">
+                <div class="text-center mb-10">
+                    <h3 class="text-2xl font-serif font-bold text-slate-900">Why Message-Based Billing?</h3>
+                    <p class="text-slate-500 text-sm mt-2">A model designed for the buyer, not the vendor.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- Buyer Friendly -->
+                    <div class="bg-emerald-50 border border-emerald-100 rounded-2xl p-8 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-emerald-500 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl uppercase tracking-widest">Buyer Friendly</div>
+                        <h4 class="font-bold text-emerald-900 mb-6 flex items-center gap-2">
+                            <i data-lucide="smile" class="w-5 h-5"></i> ThinkOwl Model
+                        </h4>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3 text-sm text-emerald-800">
+                                <div class="w-6 h-6 rounded-full bg-emerald-200 flex items-center justify-center shrink-0"><i data-lucide="check" class="w-3 h-3 text-emerald-700"></i></div>
+                                <span><strong>Per Message</strong> (Pay only for what is sent)</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-emerald-800">
+                                <div class="w-6 h-6 rounded-full bg-emerald-200 flex items-center justify-center shrink-0"><i data-lucide="check" class="w-3 h-3 text-emerald-700"></i></div>
+                                <span>Per Resolved Conversation</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-emerald-800">
+                                <div class="w-6 h-6 rounded-full bg-emerald-200 flex items-center justify-center shrink-0"><i data-lucide="check" class="w-3 h-3 text-emerald-700"></i></div>
+                                <span>Per Automated Ticket</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Vendor Friendly -->
+                    <div class="bg-red-50 border border-red-100 rounded-2xl p-8 relative overflow-hidden grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all">
+                        <div class="absolute top-0 right-0 bg-red-500 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl uppercase tracking-widest">Vendor Friendly</div>
+                        <h4 class="font-bold text-red-900 mb-6 flex items-center gap-2">
+                            <i data-lucide="frown" class="w-5 h-5"></i> Competitor Models
+                        </h4>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3 text-sm text-red-800">
+                                <div class="w-6 h-6 rounded-full bg-red-200 flex items-center justify-center shrink-0"><i data-lucide="x" class="w-3 h-3 text-red-700"></i></div>
+                                <span><strong>Per Session</strong> (24-hour window charges)</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-red-800">
+                                <div class="w-6 h-6 rounded-full bg-red-200 flex items-center justify-center shrink-0"><i data-lucide="x" class="w-3 h-3 text-red-700"></i></div>
+                                <span>Per Interaction Window</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-red-800">
+                                <div class="w-6 h-6 rounded-full bg-red-200 flex items-center justify-center shrink-0"><i data-lucide="x" class="w-3 h-3 text-red-700"></i></div>
+                                <span>Per Engagement</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exclusive Benefits -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <div class="bg-derma-600 rounded-2xl p-8 text-white">
+                    <h3 class="text-xl font-serif font-bold mb-6">Exclusive Partnership Benefits</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center border-b border-white/20 pb-2">
+                            <span class="text-sm opacity-90">Implementation Fee</span>
+                            <span class="font-bold bg-white/20 px-2 py-1 rounded text-xs">100% Waived Off</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-white/20 pb-2">
+                            <span class="text-sm opacity-90">Training Cost</span>
+                            <span class="font-bold bg-white/20 px-2 py-1 rounded text-xs">100% Waived Off</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm opacity-90">Dedicated Account Manager</span>
+                            <span class="font-bold bg-white/20 px-2 py-1 rounded text-xs">Included (24/5)</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-white/20 text-center text-xs font-bold tracking-widest uppercase opacity-80">
+                        Absolutely No Hidden Costs
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-2xl p-8">
+                    <h3 class="text-xl font-serif font-bold text-slate-900 mb-6">Technical Requirements</h3>
+                    <ul class="space-y-4 text-sm text-slate-600">
+                        <li class="flex gap-3">
+                            <i data-lucide="server" class="w-5 h-5 text-slate-400 shrink-0"></i>
+                            <div>
+                                <strong class="block text-slate-800">Cloud Telephony</strong>
+                                Client to provide Voice Provider (Tata SmartFlo, Exotel, etc). ThinkOwl provides CTI wrapper.
+                            </div>
+                        </li>
+                        <li class="flex gap-3">
+                            <i data-lucide="database" class="w-5 h-5 text-slate-400 shrink-0"></i>
+                            <div>
+                                <strong class="block text-slate-800">Server Infrastructure</strong>
+                                AWS/Oracle instance for middleware. Approx ₹2,000-2,500/mo. (Non-standard integrations only).
+                            </div>
+                        </li>
+                        <li class="flex gap-3">
+                            <i data-lucide="message-square" class="w-5 h-5 text-slate-400 shrink-0"></i>
+                            <div>
+                                <strong class="block text-slate-800">WhatsApp Charges</strong>
+                                Direct conversation fees (BIC/UIC) payable directly to Meta.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Security & Innovation Footer -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 border-t border-slate-200 pt-12">
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <i data-lucide="shield-check" class="w-5 h-5 text-derma-600"></i> Security & Compliance
+                    </h4>
+                    <p class="text-sm text-slate-500 mb-4">Your data security is paramount. We adhere to the highest global standards.</p>
+                    <div class="flex gap-4">
+                        <span class="px-3 py-1 bg-slate-100 rounded text-xs font-bold text-slate-600">GDPR</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded text-xs font-bold text-slate-600">SOC 2</span>
+                        <span class="px-3 py-1 bg-slate-100 rounded text-xs font-bold text-slate-600">ISO 27001</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <i data-lucide="zap" class="w-5 h-5 text-derma-600"></i> Continuous Innovation
+                    </h4>
+                    <p class="text-sm text-slate-500 mb-4">We deploy major feature releases every six weeks and provide continuous hotfixes.</p>
+                    <span class="px-3 py-1 bg-derma-50 text-derma-700 rounded text-xs font-bold">6-Week Release Cycle</span>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-slate-900 text-slate-300 py-12 print:hidden">
+        <div class="container mx-auto px-6 text-center">
+          <div class="flex items-center justify-center gap-2 mb-6">
+            <i data-lucide="brain-circuit" class="w-6 h-6 text-derma-500"></i>
+            <span class="font-bold text-xl text-white">ThinkOwl</span>
+          </div>
+          <p class="text-sm text-slate-500 mb-8 max-w-md mx-auto">
+            Turning support from a cost center into your competitive edge. Happier agents, happier customers, undeniable results.
+          </p>
+          <p class="text-xs text-slate-600 uppercase tracking-widest">
+            © 2026 ThinkOwl. Confidential Proposal for Dermatouch.
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
